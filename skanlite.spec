@@ -1,3 +1,6 @@
+%define         _state          stable
+%define		_kde_ver	4.2.0
+%define		qtver		4.4.3
 Summary:	Image scanning application
 Summary(pl.UTF-8):	Aplikacja do skanowania
 Name:		skanlite
@@ -5,8 +8,8 @@ Version:	0.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Libraries
-Source0:	ftp://ftp.kde.org/pub/kde/stable/4.1.0/src/extragear/%{name}-%{version}-kde4.1.0.tar.bz2
-# Source0-md5:	de1e271e129e75a2614d7c2d844436e8
+Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{_kde_ver}/src/extragear/%{name}-%{version}-kde%{_kde_ver}.tar.bz2
+# Source0-md5:	a3442f520720099af98510dd7714a07e
 URL:		http://www.simonzone.com/software/guidance/
 BuildRequires:	kde4-kdegraphics-devel
 BuildRequires:	kde4-kdegraphics-ksane
@@ -20,7 +23,7 @@ Skanlite is an image scanning application to scan and save images.
 Skanlite jest aplikacją do skanowania i zapisu obrazków.
 
 %prep
-%setup -q -n %{name}-%{version}-kde4.1.0
+%setup -q -n %{name}-%{version}-kde%{_kde_ver}
 
 %build
 install -d build
