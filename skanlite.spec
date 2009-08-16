@@ -1,15 +1,15 @@
 %define         _state          stable
-%define		_kde_ver	4.2.0
+%define		_kde_ver	4.3.0
 %define		qtver		4.4.3
 Summary:	Image scanning application
 Summary(pl.UTF-8):	Aplikacja do skanowania
 Name:		skanlite
-Version:	0.2
+Version:	0.3
 Release:	1
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{_kde_ver}/src/extragear/%{name}-%{version}-kde%{_kde_ver}.tar.bz2
-# Source0-md5:	a3442f520720099af98510dd7714a07e
+# Source0-md5:	cf72ef82553627e21406084a12e9b5eb
 URL:		http://www.simonzone.com/software/guidance/
 BuildRequires:	kde4-kdegraphics-devel
 BuildRequires:	kde4-kdegraphics-ksane
