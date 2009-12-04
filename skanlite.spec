@@ -11,8 +11,15 @@ Group:		X11/Libraries
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{_kde_ver}/src/extragear/%{name}-%{version}-kde%{_kde_ver}.tar.bz2
 # Source0-md5:	cf72ef82553627e21406084a12e9b5eb
 URL:		http://www.simonzone.com/software/guidance/
+BuildRequires:	QtNetwork-devel
+BuildRequires:	QtSvg-devel
+BuildRequires:	automoc4
+BuildRequires:	cmake
+BuildRequires:	gettext-devel
 BuildRequires:	kde4-kdegraphics-devel
 BuildRequires:	kde4-kdegraphics-ksane
+BuildRequires:	qt4-build
+BuildRequires:	qt4-qmake
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
